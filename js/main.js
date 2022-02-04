@@ -5,13 +5,10 @@ startGame.addEventListener("click", handleStartGame);
 let intentos = 0;
 
 function handleStartGame() {
-  //Handle para celular
-  if (innerWidth < 1000) {
-    document.getElementById("input-mobile").focus();
-  }
-
   let gameZone = document.querySelector("#game-zone");
   gameZone.style.display = "flex";
+
+  gameZone.addEventListener("touchstart", handleStartGame);
 
   startGame.style.display = "none";
   document.getElementById("add-new-word").style.display = "none";
