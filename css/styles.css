@@ -238,4 +238,8 @@ input {
   width: 20rem;
   height: 3rem;
 }
+
+#input-mobile {
+  opacity: 0;
+}
 /*# sourceMappingURL=styles.css.map */

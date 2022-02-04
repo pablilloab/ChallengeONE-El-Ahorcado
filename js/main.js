@@ -4,12 +4,12 @@ startGame.addEventListener("click", handleStartGame);
 //Cantidad de intentos (max 9)
 let intentos = 0;
 
-//Dejando la zona canvas responsive
-let canvas = document.getElementById("canvas");
-heighratio = 1.5;
-canvas.height = canvas.width * heightratio;
-
 function handleStartGame() {
+  //Handle para celular
+  if (innerWidth < 1000) {
+    document.getElementById("input-mobile").focus();
+  }
+
   let gameZone = document.querySelector("#game-zone");
   gameZone.style.display = "flex";
 
