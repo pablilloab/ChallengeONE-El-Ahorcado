@@ -50,14 +50,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    button {
-        width: 10vw;
-        height: 3vw;
-        margin: 1rem;
-        text-align: center;
-    }
-    
+    align-items: center;        
 }
 
 footer {
@@ -94,19 +87,13 @@ canvas {
 
 
 #game-zone {
-    background-image: url("/img/pizarra.png");
+    background-image: url("../img/pizarra.png");
     background-size: contain;
     background-repeat: no-repeat;
     display:none;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
-    button {
-        width: 10vw;
-        height: 3vw;
-        margin: 1rem;
-        padding: 25px;
-    }
+    justify-content: center;   
 }
 
 #new-word-zone {
@@ -135,7 +122,7 @@ canvas {
     display:none;
     text-align: center;
     justify-content: center;
-    padding: 25px;
+    padding: 15px;
     
 }
 
@@ -176,6 +163,7 @@ button {
 	font-weight:bold;
 	//padding:6px 24px;
 	text-decoration:none;
+    height: 3rem;
 	text-shadow:0px 1px 0px #c70067;
     @media (max-width:1200px) {
         font-size:0.5rem;
