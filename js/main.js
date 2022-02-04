@@ -4,11 +4,11 @@ startGame.addEventListener("click", handleStartGame);
 //Cantidad de intentos (max 9)
 let intentos = 0;
 
-document.getElementById("input-mobile").focus();
-
 function handleStartGame() {
   let gameZone = document.querySelector("#game-zone");
   gameZone.style.display = "flex";
+
+  //Handle teclado en mobile
 
   startGame.style.display = "none";
   document.getElementById("add-new-word").style.display = "none";
@@ -30,7 +30,7 @@ function handleStartGame() {
 
   //Busco coincidencias con las teclas que el usuario presiona.
 
-  document.addEventListener("keypress", (event) => {
+  document.addEventListener("keyup", (event) => {
     console.log(event.key);
     //Verifico coincidencia de la letra pulsada.
     let keyPressedByUser = event.key.toUpperCase();
