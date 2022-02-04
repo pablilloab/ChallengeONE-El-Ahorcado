@@ -6,7 +6,7 @@ let intentos = 0;
 
 document
   .getElementById("input-mobile")
-  .addEventListener("onchange", handleStartGame);
+  .addEventListener("textinput", handleStartGame);
 
 function handleStartGame() {
   let gameZone = document.querySelector("#game-zone");
@@ -33,6 +33,7 @@ function handleStartGame() {
   //Busco coincidencias con las teclas que el usuario presiona.
 
   document.addEventListener("keydown", (event) => {
+    console.log(event.key);
     //Verifico coincidencia de la letra pulsada.
     let keyPressedByUser = event.key.toUpperCase();
     //Indice para controlar posicion en el iterable del string.
