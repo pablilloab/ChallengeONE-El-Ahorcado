@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Bienvenidos al juego del Ahorcado</title>
+</head>
+<body>
+    <main>
+
+        
+        <!-- Ventana modal para mostrar info del juego -->
+        <div id="modalwrapper" class="modal">
+            <div class="modalinfo">
+                <span id="infotaller"></span>
+            </div>
+        </div> 
+        
+        <h1>El ahorcado</h1>
+
+        <div id="start-game-wrapper">            
+
+            <!-- Zona para crear horca y figuras del ahorcado. Se mantiene display none hasta el momento de su uso-->
+            <div id="game-zone">                
+                <canvas id="canvas" width="1200" height="800"></canvas>
+                <ul id="ok-letters"></ul>
+                <ul id="wrong-letter"></ul>
+            </div>
+
+            <!-- Zona para agregar nueva palabra. Semantiene display none hasta el momento de su uso-->
+            <div id="new-word-zone">                
+                <label for="word">Ingrese la nueva palabra.</label>
+                <input type="text" id="word" name="new word">                
+                <button id="save-start">Guardar y Empezar</button>
+                <button id="cancel">Cancelar</button>                
+            </div>
+
+            <!-- Disparadores de interacciones del usuario -->
+            <button id="start-game">Iniciar Juego.</button>
+            <button id="add-new-word">Agregar nueva palabra.</button>
+            <button id="give-up">Desistir.</button>
+
+        </div>
+
+        <footer>
+            <h6>Code by Pablo Bari ©</h6>
+            <div>
+                <div class="img-git">
+                    <a href="https://github.com/pablilloab" target="_blank"><img src="./img/github logo.png" alt="logo-git"></a>               
+                </div>
+                <div class="img-link">
+                    <a href="https://www.linkedin.com/in/pablo-bari-20b9a1214/" target="_blank"><img src="./img/linkedin logo.png" alt="logo-lin"></a>               
+                </div>
+            </div>
+        </footer>
+
+        <script src="/js/main.js"></script>
+        <script src="js/words.js"></script>
+        <script src="/js/getWords.js"></script>
+        <script src="/js/shapes.js"></script>
+        <script src="/js/modal.js"></script>
+        <script src="/js/addWord.js"></script>
+    </main>
+    
+</body>
+</html>
