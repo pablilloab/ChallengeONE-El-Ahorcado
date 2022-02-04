@@ -4,7 +4,9 @@ startGame.addEventListener("click", handleStartGame);
 //Cantidad de intentos (max 9)
 let intentos = 0;
 
-gameZone.addEventListener("touchstart", handleStartGame);
+document
+  .getElementById("input-mobile")
+  .addEventListener("onchange", handleStartGame);
 
 function handleStartGame() {
   let gameZone = document.querySelector("#game-zone");
