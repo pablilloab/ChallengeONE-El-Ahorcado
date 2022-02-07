@@ -33,6 +33,7 @@ function handleMobileInput() {
       wrongLi.innerHTML = keyPressedByUser;
       wrongUl.appendChild(wrongLi);
       stringOfWrongCharacters += keyPressedByUser;
+      inputMobile.value = "";
     } else {
       mostrarModal("Char repetido");
     }
