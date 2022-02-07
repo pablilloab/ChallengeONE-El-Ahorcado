@@ -105,6 +105,7 @@ canvas {
 #ok-letters {
     display: flex;
     flex-wrap: wrap;
+    width: 75%;
     flex-direction: row;
     font-family: 'Permanent Marker', cursive;
     color:white;
@@ -114,6 +115,7 @@ canvas {
 #wrong-letter {
     display: flex;
     flex-wrap: wrap;
+    width: 75%;
     flex-direction: row;
     color:red;
     font-family: 'Permanent Marker', cursive;
