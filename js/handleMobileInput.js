@@ -33,11 +33,11 @@ function handleMobileInput() {
       wrongLi.innerHTML = keyPressedByUser;
       wrongUl.appendChild(wrongLi);
       stringOfWrongCharacters += keyPressedByUser;
-      inputMobile.value = "";
     } else {
       mostrarModal("Char repetido");
     }
 
+    inputMobile.value = "";
     stringFlag = stringFlag.replaceAll(keyPressedByUser, "");
     console.log(stringFlag);
 
