@@ -30,7 +30,7 @@ function handleDesktopInput() {
       wrongUl.appendChild(wrongLi);
       stringOfWrongCharacters += keyPressedByUser;
     } else {
-      mostrarModal("Char repetido");
+      mostrarModal("Char repetido (click para continuar jugando)");
     }
 
     stringFlag = stringFlag.replaceAll(keyPressedByUser, "");
@@ -42,7 +42,7 @@ function handleDesktopInput() {
     }
 
     if (intentos == formas.length) {
-      mostrarModal("Estás frito angelito");
+      mostrarModal("Estás frito angelito. La palabra era " + selectedWord);
       startPage();
     }
   });
